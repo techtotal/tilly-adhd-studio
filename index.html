@@ -1,0 +1,1370 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="ADHD coaching online and face to face from a garden art studio near Stowmarket, Suffolk, with Natalie, a qualified ADHD coach and Social Worker.">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Tilly ADHD Studio · ADHD coaching near Stowmarket, Suffolk</title>
+</head><body>
+<script>
+/* hide scroll-reveal content only when the browser can bring it back; undo if the main script never starts */
+(function(d){ if ('IntersectionObserver' in window && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)){
+  d.classList.add('js-reveal'); setTimeout(function(){ if (!window.__revealReady) d.classList.remove('js-reveal'); }, 3000); } })(document.documentElement);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bagel+Fat+One&family=Caveat:wght@500;700&display=swap">
+<style>
+/* Layout: a paper-collage page. Full-bleed colour bands joined by torn-paper edges,
+   one centred column inside each band, stickers and notes tilted a few degrees. */
+:root{
+  --ink:#1d1647; --ink-soft:#4a4275; --paper:#fffdf5;
+  --sun:#ffd23f; --poppy:#ff4d3d; --pink:#ff8fc0; --blue:#2f4bff;
+  --mint:#79e0b4; --lilac:#c9b8ff; --tangerine:#ff9b2f;
+  --f-display:'Bagel Fat One','Arial Rounded MT Bold','Trebuchet MS',sans-serif;
+  --f-body:'Atkinson Hyperlegible','Segoe UI',Verdana,sans-serif;
+  --f-hand:'Caveat','Bradley Hand','Comic Sans MS',cursive;
+  --shadow:4px 4px 0 var(--ink);
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{background:var(--paper);color:var(--ink);font:18px/1.6 var(--f-body);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--paper)}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.05;margin:0;text-wrap:balance;letter-spacing:.005em}
+h1{font-size:clamp(2.5rem,7.2vw,5.2rem)}
+h2{font-size:clamp(2rem,5vw,3.4rem)}
+h3{font-size:clamp(1.3rem,2.6vw,1.7rem);line-height:1.15}
+p{margin:0 0 1em;max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:4px solid var(--blue);outline-offset:3px;border-radius:6px}
+.band :focus-visible{outline-color:var(--ink)}
+.hand{font-family:var(--f-hand);font-weight:700;font-size:1.5em;line-height:1}
+.wrap{max-width:1140px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:clamp(2.5rem,7vw,5rem);position:relative}
+.band{position:relative}
+.edge{display:block;height:clamp(22px,4.5vw,56px);line-height:0}
+.edge svg{display:block;width:100%;height:100%}
+.eyebrow{font-family:var(--f-hand);font-weight:700;font-size:1.7rem;display:inline-block;rotate:-2deg;margin-bottom:.35rem}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.5rem;font:700 1rem/1 var(--f-body);text-decoration:none;cursor:pointer;
+  padding:.95rem 1.4rem;border:3px solid var(--ink);border-radius:999px;background:var(--ink);color:#fff;box-shadow:var(--shadow);
+  transition:transform .15s,box-shadow .15s,background .15s,color .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink);background:var(--poppy);color:var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn.alt{background:var(--paper);color:var(--ink)}
+.btn.alt:hover{background:var(--mint)}
+.btn.small{padding:.65rem 1rem;font-size:.92rem}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--paper);border-bottom:3px solid var(--ink)}
+.top .in{max-width:1140px;margin-inline:auto;display:flex;align-items:center;gap:1rem;justify-content:space-between;
+  padding:.6rem max(16px,env(safe-area-inset-right,0px)) .6rem max(16px,env(safe-area-inset-left,0px))}
+.logo{display:flex;align-items:center;gap:.55rem;text-decoration:none;font-family:var(--f-display);font-size:1.35rem;line-height:1}
+.logo svg{width:38px;height:38px;flex:none}
+.logo small{display:block;font:700 .62rem/1 var(--f-body);letter-spacing:.2em;text-transform:uppercase;margin-top:.25rem;color:var(--ink-soft)}
+.menu{display:flex;align-items:center;gap:.25rem}
+.menu a.l{text-decoration:none;font-weight:700;font-size:.95rem;padding:.45rem .75rem;border-radius:999px}
+.menu a.l:hover{background:var(--sun)}
+.burger{display:none;border:3px solid var(--ink);background:var(--sun);border-radius:12px;padding:.5rem .7rem;font:700 .9rem var(--f-body);color:var(--ink);cursor:pointer}
+@media (max-width:860px){
+  .burger{display:block}
+  .menu{position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;background:var(--paper);border-bottom:3px solid var(--ink);
+    padding:.5rem max(16px,env(safe-area-inset-left,0px)) 1rem;display:none}
+  .menu.open{display:flex}
+  .menu a.l{padding:.8rem .5rem;font-size:1.1rem}
+  .top .btn.small{display:none}
+}
+
+/* hero */
+.hero{background:var(--sun);overflow:hidden}
+#fly{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:2.5rem;align-items:center;z-index:1;padding-bottom:clamp(3rem,7vw,5rem)}
+/* intro sits on a paper card in front of the flying butterflies and confetti, so they never cross the text */
+.hero .lede{font-size:clamp(1.05rem,2vw,1.2rem);margin-top:1.4rem;position:relative;z-index:2;background:var(--paper);border:3px solid var(--ink);border-radius:18px;box-shadow:var(--shadow);padding:.9rem 1.1rem}
+.hero .lede .hi{display:block;font-size:1.15em;margin-bottom:.15rem}
+.hero .lede .motto{display:block;margin-top:.6rem}
+.hero .cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.6rem}
+.swap{display:inline-block;text-align:center;background:var(--poppy);color:var(--paper);padding:.04em .45em .1em;border:3px solid var(--ink);border-radius:.3em;rotate:-2deg;box-shadow:var(--shadow);
+  white-space:nowrap;transition:transform .3s}
+.swap.flip{animation:flip .5s}
+@keyframes flip{0%{transform:translateY(0) rotate(0)}40%{transform:translateY(-.35em) rotate(4deg) scale(.92)}100%{transform:translateY(0) rotate(0)}}
+.where{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;background:var(--paper);border:3px solid var(--ink);border-radius:999px;padding:.35rem .9rem;margin-bottom:1.2rem;font-size:.95rem}
+.where i{width:.7rem;height:.7rem;border-radius:50%;background:var(--mint);border:2px solid var(--ink);animation:pulse 2s infinite}
+@keyframes pulse{50%{transform:scale(1.5)}}
+.collage{position:relative;width:100%;max-width:440px;aspect-ratio:1/1.05;margin-inline:auto}
+.polaroid{background:#fff;border:3px solid var(--ink);padding:12px 12px 14px;box-shadow:6px 6px 0 var(--ink);rotate:-3deg}
+.polaroid svg{display:block;width:100%;height:auto;border:2px solid var(--ink)}
+.polaroid figcaption{font-family:var(--f-hand);font-weight:700;font-size:1.45rem;text-align:center;padding-top:.5rem;line-height:1}
+.collage .polaroid{position:absolute;inset:6% 8% 14% 4%;display:flex;flex-direction:column}
+.collage .polaroid img{flex:1;min-height:0;width:100%;height:auto;aspect-ratio:auto!important;object-fit:cover;object-position:50% 58%}
+.sticker{position:absolute;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none;z-index:3;rotate:var(--r,0deg);filter:drop-shadow(4px 4px 0 var(--ink))}
+.sticker.drag{cursor:grabbing;z-index:9}
+.sticker .burst{display:grid;place-items:center;text-align:center;font:700 .88rem/1.1 var(--f-body);padding:.5rem;
+  clip-path:polygon(50% 0,59% 8%,71% 3%,76% 14%,89% 15%,89% 28%,100% 35%,94% 47%,100% 59%,90% 66%,91% 79%,78% 82%,73% 94%,61% 90%,50% 100%,39% 90%,27% 94%,22% 82%,9% 79%,10% 66%,0 59%,6% 47%,0 35%,11% 28%,11% 15%,24% 14%,29% 3%,41% 8%);
+  animation:wob 5s ease-in-out infinite}
+@keyframes wob{50%{transform:rotate(9deg) scale(1.05)}}
+.sticker.s1{right:-2%;top:-2%;width:128px;height:128px;--r:10deg}
+.sticker.s1 .burst{background:var(--pink);width:100%;height:100%}
+.sticker.s2{left:-4%;top:36%;width:118px;height:118px;--r:-8deg}
+.sticker.s2 .burst{background:var(--mint);width:100%;height:100%;animation-delay:-2s}
+.sticker.s3{right:2%;bottom:-3%;width:132px;height:132px;--r:6deg}
+.sticker.s3 .burst{background:var(--blue);color:#fff;width:100%;height:100%;animation-delay:-3.5s}
+.hint{position:absolute;left:50%;bottom:-2.2rem;translate:-50% 0;font-family:var(--f-hand);font-weight:700;font-size:1.3rem;white-space:nowrap}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;gap:3rem}
+  .collage{max-width:340px}
+  .sticker.s1,.sticker.s2,.sticker.s3{width:100px;height:100px}
+  .sticker .burst{font-size:.75rem}
+}
+
+/* reveal on scroll: content fades and rises in; it is only hidden once the js-reveal flag is set */
+.js-reveal .reveal{opacity:0;transform:translateY(28px) rotate(var(--rv,0deg));
+  transition:opacity .6s ease,transform .8s cubic-bezier(.2,1.3,.4,1),rotate .25s,translate .25s,scale .25s,box-shadow .2s}
+.js-reveal .reveal.in{opacity:1;transform:none}
+.js-reveal .polaroid.reveal{transform:translateY(-44px) scale(1.08) rotate(-7deg)}
+.js-reveal .polaroid.reveal.in{transform:none}
+
+/* ticker */
+.ticker{background:var(--ink);color:var(--sun);overflow:hidden;padding:.9rem 0;font-family:var(--f-display);font-size:clamp(1.2rem,2.6vw,1.7rem)}
+.ticker .track{display:flex;width:max-content;animation:marquee 46s linear infinite}
+.ticker:hover .track{animation-play-state:paused}
+.ticker span{white-space:nowrap;display:inline-flex;align-items:center}
+.ticker span::after{content:"";display:inline-block;width:.55em;height:.55em;background:var(--pink);margin:0 1.3rem;rotate:45deg}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* bubbles */
+.bubblesec{background:var(--blue);color:#fff}
+.bubblesec .intro{max-width:46rem}
+.bubblesec .intro p{font-size:1.15rem}
+.bubbles{display:flex;flex-wrap:wrap;gap:1rem 1.2rem;justify-content:center;margin-top:2.2rem}
+.bub{--s:132px;position:relative;width:var(--s);height:var(--s);border-radius:50%;border:3px solid var(--ink);background:var(--c);color:var(--ink);
+  font:700 1rem/1.1 var(--f-body);cursor:pointer;display:grid;place-items:center;padding:.6rem;text-align:center;
+  box-shadow:inset -10px -12px 0 rgba(29,22,71,.12),var(--shadow);animation:bob 5s ease-in-out var(--d,0s) infinite;transition:scale .15s}
+.bub:hover{scale:1.1}
+.bub::before{content:"";position:absolute;top:13%;left:20%;width:20%;height:12%;border-radius:50%;background:rgba(255,255,255,.7);rotate:-30deg}
+.bub.seen::after{content:"";position:absolute;right:6%;top:6%;width:26px;height:26px;border-radius:50%;background:var(--ink) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%23ffd23f' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat}
+.bub.sel{outline:4px solid var(--sun);outline-offset:4px}
+.bub.popping{animation:popb .35s ease-out}
+@keyframes bob{50%{transform:translateY(-14px) rotate(3deg)}}
+@keyframes popb{40%{transform:scale(1.35)}100%{transform:scale(1)}}
+.bubpanel{margin-top:2.4rem;background:var(--paper);color:var(--ink);border:3px solid var(--ink);border-radius:28px 28px 28px 6px;box-shadow:6px 6px 0 var(--ink);
+  padding:clamp(1.2rem,3vw,2rem);display:grid;grid-template-columns:1fr 1fr;gap:.5rem 2rem;min-height:11rem}
+.bubpanel h3{grid-column:1/-1;font-size:clamp(1.6rem,3.4vw,2.3rem)}
+.bubpanel h4{margin:.2rem 0 .3rem;font:700 .8rem var(--f-body);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+.bubpanel p{margin:0}
+.bubpanel .pop-in{animation:slidein .4s cubic-bezier(.2,1.4,.4,1)}
+@keyframes slidein{from{transform:translateY(14px) scale(.98)}}
+
+/* about */
+.about{background:var(--pink)}
+.about .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:start}
+.about .big{font-size:1.2rem}
+.quote{font-family:var(--f-hand);font-weight:700;font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.1;margin:1.4rem 0;padding-left:1rem;border-left:6px solid var(--ink);max-width:28ch}
+.about .polaroid{rotate:3deg;max-width:380px;margin-inline:auto}
+.creds{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.2rem 0 0;padding:0;list-style:none}
+.creds li{background:var(--paper);border:3px solid var(--ink);border-radius:999px;padding:.35rem .9rem;font-weight:700;font-size:.92rem}
+.notes-h{margin-top:clamp(2.5rem,6vw,4rem)}
+.notes{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.6rem 1.4rem;margin-top:1.6rem;padding:0;list-style:none}
+.note{position:relative;background:var(--c,#fff);border:3px solid var(--ink);padding:1.4rem 1rem 1rem;font-size:1rem;line-height:1.4;rotate:var(--r,0deg);box-shadow:var(--shadow);transition:rotate .25s,scale .25s;min-width:0}
+.note::before{content:"";position:absolute;top:-14px;left:50%;width:76px;height:24px;translate:-50% 0;rotate:-3deg;background:rgba(255,255,255,.65);border:2px dashed rgba(29,22,71,.35)}
+.note:hover{rotate:0deg;scale:1.05;z-index:2}
+
+/* why */
+.why{background:var(--paper)}
+.why .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem 1.6rem;margin-top:2.4rem}
+.wcard{background:var(--c);border:3px solid var(--ink);border-radius:26px;box-shadow:6px 6px 0 var(--ink);padding:1.6rem;rotate:var(--r,0deg);transition:rotate .25s,translate .25s;min-width:0}
+.wcard:hover{rotate:0deg;translate:0 -6px}
+.wcard .n{font-family:var(--f-display);font-size:4rem;line-height:.8;display:block;margin-bottom:.8rem;-webkit-text-stroke:3px var(--ink);color:var(--paper)}
+.wcard h3{margin-bottom:.7rem}
+.wcard p{margin:0}
+
+/* how */
+.how{background:var(--lilac)}
+.how .two{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.5rem,4vw,3rem);align-items:center;margin-bottom:2.5rem}
+.how .polaroid{rotate:2.5deg;max-width:360px;margin-inline:auto}
+.journey{position:relative;margin-top:1rem}
+.journey svg.line{position:absolute;left:0;top:34px;width:100%;height:60px;overflow:visible;pointer-events:none}
+.journey .bfly{position:absolute;left:0;top:0;width:30px;height:30px;margin:-15px 0 0 -15px;z-index:2;pointer-events:none}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;list-style:none;margin:0;padding:0;position:relative}
+.step{background:var(--paper);border:3px solid var(--ink);border-radius:22px;box-shadow:var(--shadow);padding:1.2rem 1rem 1.1rem;margin-top:2.4rem;min-width:0}
+.step:nth-child(even){margin-top:3.6rem}
+.step .badge{display:grid;place-items:center;width:3rem;height:3rem;border-radius:50%;background:var(--sun);border:3px solid var(--ink);font-family:var(--f-display);font-size:1.4rem;margin:-2.6rem 0 .6rem}
+.step h3{font-size:1.25rem;margin-bottom:.4rem}
+.step p{margin:0;font-size:.98rem}
+.vs{margin-top:3.2rem}
+.seg{display:inline-flex;border:3px solid var(--ink);border-radius:999px;background:var(--paper);padding:4px;gap:4px;margin:1rem 0}
+.seg button{font:700 1rem var(--f-body);border:0;border-radius:999px;padding:.6rem 1.2rem;background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--sun)}
+.vsbox{background:var(--paper);border:3px solid var(--ink);border-radius:24px;padding:1.3rem 1.5rem;max-width:44rem;box-shadow:var(--shadow)}
+.vsbox p{margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;padding:0;margin:1rem 0 0;list-style:none}
+.chip{border:3px solid var(--ink);border-radius:999px;background:var(--paper);color:var(--ink);padding:.4rem .95rem;font:700 .95rem var(--f-body);cursor:default}
+button.chip{cursor:pointer;transition:transform .15s,background .15s}
+button.chip:hover{transform:rotate(-2deg) scale(1.05);background:var(--sun)}
+button.chip[aria-pressed="true"]{background:var(--ink);color:var(--sun)}
+
+/* timer */
+.timer{background:var(--tangerine)}
+.timer .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3rem);align-items:center}
+.tcard{background:var(--paper);border:3px solid var(--ink);border-radius:30px;box-shadow:8px 8px 0 var(--ink);padding:1.4rem;text-align:center;rotate:1.5deg;max-width:420px;margin-inline:auto;width:100%}
+.tcard svg{width:min(240px,70%);height:auto;display:block;margin:0 auto}
+.clock{font-family:var(--f-display);font-size:clamp(3rem,9vw,4.6rem);line-height:1;margin:.2rem 0 .6rem;font-variant-numeric:tabular-nums}
+.tlen{display:flex;justify-content:center;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap}
+.tcustom{display:flex;justify-content:center;align-items:center;gap:.5rem;flex-wrap:wrap;margin:-.2rem 0 1rem;font-weight:700;font-size:.95rem}
+.tcustom>span{width:100%;text-align:center}
+.tcustom label{white-space:nowrap}
+.tcustom input{width:3.8rem;font:700 1.05rem var(--f-body);text-align:center;color:var(--ink);background:#fff;border:3px solid var(--ink);border-radius:12px;padding:.35rem .2rem}
+.tbtns{display:flex;justify-content:center;gap:.7rem;flex-wrap:wrap}
+.tmsg{min-height:1.6em;margin:.9rem 0 0;font-weight:700;max-width:none}
+
+/* services */
+.services{background:var(--mint)}
+.svcs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:2rem 1.6rem;margin-top:2.4rem}
+.svc{position:relative;background:var(--paper);border:3px solid var(--ink);border-radius:26px;box-shadow:6px 6px 0 var(--ink);overflow:hidden;display:flex;flex-direction:column;transition:translate .2s,box-shadow .2s;min-width:0}
+.svc:hover{translate:-3px -4px;box-shadow:10px 10px 0 var(--ink)}
+.svc header{background:var(--c);border-bottom:3px solid var(--ink);padding:1.1rem 1.3rem}
+.svc header .price{font-family:var(--f-display);font-size:2.3rem;line-height:1}
+.svc header small{font:700 .85rem var(--f-body);display:block;margin-top:.2rem}
+.svc .body{padding:1.2rem 1.3rem 1.4rem}
+.svc .body p{margin:0 0 .8rem}
+.svc .body p:last-child{margin:0}
+.svc .body .btn{margin-top:.4rem}
+.builder{margin-top:3rem;background:var(--paper);border:3px solid var(--ink);border-radius:30px;box-shadow:8px 8px 0 var(--ink);padding:clamp(1.2rem,3vw,2.2rem);display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.2rem,3vw,2.4rem);align-items:center}
+.builder h3{margin-bottom:.5rem}
+.card{position:relative;background:#fff;border:3px dashed var(--ink);padding:1.2rem 1.2rem 1.2rem;rotate:-1.5deg;min-height:15rem;background-image:repeating-linear-gradient(transparent 0 31px,rgba(47,75,255,.18) 31px 32px);background-position:0 .8rem}
+.card .stamp{position:absolute;right:.8rem;top:.8rem;width:64px;height:76px;background:var(--poppy);border:3px solid var(--ink);display:grid;place-items:center;font:700 .62rem/1.1 var(--f-body);text-transform:uppercase;letter-spacing:.1em;text-align:center;color:var(--ink);rotate:5deg;outline:3px dotted var(--paper);outline-offset:-8px}
+.card.bump .stamp{animation:stamp .5s cubic-bezier(.2,1.6,.4,1)}
+@keyframes stamp{0%{transform:scale(1.8) rotate(-12deg)}100%{transform:none}}
+.card .hand{display:block;margin-bottom:.4rem;padding-right:4.5rem;font-size:1.7rem}
+.card p{margin:0 0 .5rem;line-height:32px;padding-right:4rem}
+.card ul{margin:0;padding:0 0 0 1.1rem;line-height:32px}
+
+/* faq */
+.faq{background:var(--paper)}
+.faq .list{display:grid;gap:1rem;margin-top:2.2rem;max-width:52rem}
+.faq details{background:var(--c,#fff);border:3px solid var(--ink);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:1rem 3.4rem 1rem 1.2rem;font:700 1.12rem/1.3 var(--f-body);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:1rem;top:50%;translate:0 -50%;width:2rem;height:2rem;border-radius:50%;background:var(--ink);color:var(--sun);display:grid;place-items:center;font-size:1.4rem;line-height:1;transition:rotate .25s}
+.faq details[open] summary::after{rotate:135deg}
+.faq details p{margin:0;padding:0 1.2rem 1.2rem}
+.faq .note-x{margin-top:2rem;font-family:var(--f-hand);font-weight:700;font-size:1.6rem;line-height:1.15;max-width:34rem;rotate:-1deg}
+
+/* contact */
+.contact{background:var(--blue);color:#fff}
+.contact .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(1.5rem,4vw,3rem);align-items:start}
+.contact .polaroid{rotate:-2deg;max-width:360px;margin:2rem auto 0;color:var(--ink)}
+.form{background:var(--paper);color:var(--ink);border:3px solid var(--ink);border-radius:30px;box-shadow:8px 8px 0 var(--ink);padding:clamp(1.2rem,3vw,2rem)}
+.form label{display:block;font-weight:700;margin:1.2rem 0 .4rem}
+.form label:first-child{margin-top:0}
+.form input[type=text],.form textarea{width:100%;font:1rem/1.5 var(--f-body);color:var(--ink);background:#fff;border:3px solid var(--ink);border-radius:14px;padding:.7rem .9rem}
+.form textarea{min-height:5.5rem;resize:vertical}
+.draft{margin-top:1.4rem;background:#fff;border:3px dashed var(--ink);border-radius:14px;padding:1rem;font-size:.98rem;white-space:pre-wrap;overflow-wrap:anywhere}
+.addr{display:inline-block;font-weight:700;background:var(--sun);border:3px solid var(--ink);border-radius:10px;padding:.2rem .6rem;user-select:all;overflow-wrap:anywhere}
+.actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1rem}
+.fine{font-size:.9rem;color:var(--ink-soft);margin:.9rem 0 0}
+
+/* footer */
+.foot{background:var(--ink);color:var(--paper);text-align:center;padding-bottom:max(1.5rem,env(safe-area-inset-bottom,0px))}
+.foot .wrap{padding-block:2.4rem 1rem}
+.foot p{margin:.3rem auto}
+.foot .logo{justify-content:center;color:var(--sun);margin-bottom:.6rem}
+
+/* confetti pieces */
+.conf{position:fixed;left:0;top:0;width:11px;height:11px;pointer-events:none;z-index:70}
+
+@media (max-width:860px){
+  .about .grid,.how .two,.timer .grid,.builder,.contact .grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:1rem}
+  .step,.step:nth-child(even){margin-top:1.6rem}
+  .journey svg.line,.journey .bfly{display:none}
+  .bubpanel{grid-template-columns:1fr}
+  .bub{--s:112px;font-size:.92rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{transform:none}
+  .ticker .track{flex-wrap:wrap;width:auto;justify-content:center}
+}
+
+/* photos inside polaroid frames */
+.polaroid img{display:block;width:100%;height:auto;border:2px solid var(--ink);background:var(--lilac)}
+.polaroid.wide{max-width:760px;margin:3rem auto 0;rotate:-1deg}
+.polaroid.wide img{aspect-ratio:4/3;object-fit:cover}
+
+/* draft placeholders: facts still to confirm */
+.tbc{background:repeating-linear-gradient(-45deg,#fff3b0 0 8px,#ffe680 8px 16px);color:var(--ink);border:2px dashed var(--ink);border-radius:6px;padding:0 .35em;font-weight:700;white-space:nowrap}
+.tbc::before{content:"TO CONFIRM: ";font-size:.7em;letter-spacing:.08em}
+
+/* credentials strip */
+.proof{background:var(--ink);color:var(--paper)}
+.proof .wrap{padding-block:clamp(1.8rem,4vw,2.8rem) clamp(1rem,3vw,1.6rem)}
+.proof-lede{font-family:var(--f-hand);font-weight:700;font-size:clamp(1.5rem,3vw,2rem);color:var(--pink);margin:0 auto 1.2rem;text-align:center;max-width:none}
+.stats{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.stats li{border:3px solid var(--paper);border-radius:22px;padding:1.1rem 1rem;text-align:center;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.stats b{display:block;font-family:var(--f-display);font-weight:400;font-size:clamp(1.5rem,3.2vw,2.4rem);line-height:1;color:var(--sun);overflow-wrap:anywhere}
+.stats span{display:block;margin-top:.45rem;font-weight:700;font-size:.95rem;line-height:1.3}
+@media (max-width:860px){.stats{grid-template-columns:1fr 1fr}}
+
+/* section sub-lines and key lines */
+.sub{font-size:1.2rem;margin-top:.8rem;font-weight:700}
+.wcard .key{font-weight:700;font-size:1.1rem;line-height:1.35;margin:0 0 .7rem;padding-bottom:.7rem;border-bottom:3px solid var(--ink)}
+.wcard .key+p{margin:0}
+
+/* listening spotlight */
+.spot{margin-top:1.6rem;background:var(--paper);border:3px solid var(--ink);border-radius:22px;box-shadow:var(--shadow);padding:1.2rem 1.4rem;border-left:14px solid var(--blue)}
+.spot h3{margin-bottom:.4rem}
+.spot p{margin:0}
+
+/* quote band */
+.qband{background:var(--ink);color:var(--paper)}
+.qband .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(1.5rem,5vw,4rem);align-items:center}
+.qband .polaroid{max-width:300px;margin-inline:auto;color:var(--ink)}
+.qband blockquote{margin:0}
+.qband blockquote p{font-family:var(--f-display);font-size:clamp(1.7rem,3.8vw,2.9rem);line-height:1.12;color:var(--sun);max-width:none;margin:0 0 1rem;text-wrap:balance}
+.qband blockquote footer{font-family:var(--f-hand);font-weight:700;font-size:1.6rem;color:var(--pink);margin-bottom:1.4rem}
+
+/* featured coaching offer */
+.feature{margin-top:2.4rem;background:var(--paper);border:3px solid var(--ink);border-radius:30px;box-shadow:10px 10px 0 var(--ink);overflow:hidden}
+.feature header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;background:var(--pink);border-bottom:3px solid var(--ink);padding:1.3rem clamp(1.2rem,3vw,2rem)}
+.feature header h3{font-size:clamp(1.8rem,4vw,2.6rem)}
+.feature .tag{display:inline-block;background:var(--ink);color:var(--sun);font:700 .75rem var(--f-body);letter-spacing:.16em;text-transform:uppercase;border-radius:999px;padding:.3rem .8rem;margin-bottom:.5rem}
+.price-box{text-align:right}
+.price-box .price{font-family:var(--f-display);font-size:clamp(2.6rem,6vw,3.6rem);line-height:1;display:block}
+.price-box small{font-weight:700}
+.fbody{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(1.2rem,3vw,2.4rem);padding:clamp(1.2rem,3vw,2rem)}
+.fbody .big{font-size:1.2rem}
+.ticks{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+.ticks li{position:relative;padding-left:2.1rem}
+.ticks li::before{content:"";position:absolute;left:0;top:.2rem;width:1.4rem;height:1.4rem;border-radius:50%;background:var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%231d1647' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/75% no-repeat;border:2px solid var(--ink)}
+.fcta{background:var(--sun);border:3px solid var(--ink);border-radius:22px;padding:1.2rem;align-self:start}
+.fcta p{font-size:1rem}
+.also{margin-top:3rem}
+.services .svcs{margin-top:1.2rem}
+.svc .body h3{margin-bottom:.5rem}
+@media (max-width:860px){.qband .wrap,.fbody{grid-template-columns:1fr}.price-box{text-align:left}}
+
+/* testimonials */
+.kind{background:var(--sun)}
+.kinds{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1.6rem;margin-top:2rem}
+.kq{margin:0;background:var(--paper);border:3px solid var(--ink);border-radius:24px 24px 24px 6px;box-shadow:var(--shadow);padding:1.4rem;rotate:var(--r,0deg);min-width:0}
+.kq blockquote{margin:0 0 .8rem;font-size:1.2rem;font-weight:700;line-height:1.4}
+.kq .tbc{white-space:normal}
+.kq figcaption{font-family:var(--f-hand);font-weight:700;font-size:1.4rem}
+
+/* faq groups */
+.fgroup{margin-top:2.4rem}
+.faq .fgroup+.list{margin-top:1rem}
+
+/* phones: crop portrait photos to landscape, tilt less, and swipe the notes sideways */
+@media (max-width:860px){
+  .polaroid{rotate:1deg!important;max-width:420px}
+  .about .polaroid,.how .polaroid,.contact .polaroid,.qband .polaroid{width:calc(100% - 12px);max-width:420px;margin-inline:auto}
+  .polaroid img{aspect-ratio:4/3;object-fit:cover;object-position:50% 40%}
+  .qband .polaroid img{object-position:50% 30%}
+  .contact .polaroid img{object-position:50% 70%}
+  .polaroid.wide{margin-top:2rem}
+  .notes{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:1rem;padding:1.4rem 4px 1.2rem;margin-inline:-4px;-webkit-overflow-scrolling:touch;align-items:flex-start}
+  .note{flex:0 0 72%;scroll-snap-align:start;rotate:0deg}
+  .notes-h{margin-top:2.2rem}
+  .bubpanel{display:none}
+  .journey .bfly{display:block}
+  .journey .vline,.journey .vfill{display:block}
+  .steps{padding-left:3.8rem;gap:1.2rem}
+  .step,.step:nth-child(even){margin-top:0;position:relative}
+  .step .badge{position:absolute;left:-3.8rem;top:.9rem;margin:0}
+  .fbody>*{min-width:0}
+  .tbc{white-space:normal}
+  .stats li{padding:.9rem .4rem}
+  .stats b{font-size:1.35rem;overflow-wrap:normal}
+}
+
+/* the rotating word and "brain" always travel together on the second line */
+.hero h1 .tail{white-space:nowrap;display:inline-block;margin-top:.4em}
+.hero h1 .tail .swap{margin-right:.22em}
+.hero .wrap>*{min-width:0}
+
+/* counting stats keep their width steady */
+.stats b{font-variant-numeric:tabular-nums}
+
+/* coaching steps: badges light up as the butterfly reaches them */
+.step .badge{background:var(--paper);transition:background .3s}
+.step.lit .badge{background:var(--sun);animation:badgepop .45s cubic-bezier(.2,1.6,.4,1)}
+@keyframes badgepop{40%{transform:scale(1.3)}}
+.vline,.vfill{display:none;position:absolute;width:0;pointer-events:none}
+.vline{border-left:3px dashed var(--ink)}
+.vfill{border-left:5px solid var(--ink);margin-left:-1px}
+
+/* bubble answers: a sheet that slides up from the bottom on phones */
+.bub span{display:block;white-space:normal;overflow-wrap:normal;hyphens:manual}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:80;max-height:75vh;overflow:auto;background:var(--paper);color:var(--ink);
+  border:3px solid var(--ink);border-bottom:0;border-top:12px solid var(--c,var(--sun));border-radius:26px 26px 0 0;
+  padding:1.1rem max(16px,env(safe-area-inset-left,0px)) calc(1.1rem + env(safe-area-inset-bottom,0px));
+  transform:translateY(105%);transition:transform .35s cubic-bezier(.2,1.1,.4,1)}
+.sheet.open{transform:none}
+.sheet h3{font-size:1.9rem;margin-bottom:.7rem;outline:none}
+.sheet h4{margin:.4rem 0 .2rem;font:700 .8rem var(--f-body);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+.sheet p{margin:0 0 .5rem;max-width:none}
+.sheet-in.pop-in{animation:slidein .35s cubic-bezier(.2,1.4,.4,1)}
+.sheet-btns{display:flex;justify-content:space-between;gap:.8rem;margin-top:1rem}
+.sheet-bg{position:fixed;inset:0;z-index:79;background:rgba(29,22,71,.3);opacity:0;transition:opacity .3s}
+.sheet-bg.open{opacity:1}
+@media (min-width:861px){.sheet,.sheet-bg{display:none!important}}
+
+/* coaching boundaries, underlined wherever they're stated */
+.bound{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:.2em;text-decoration-color:var(--poppy);font-weight:700}
+
+/* qualification badge */
+.stats .badge-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;padding-block:.6rem}
+.stats .badge-tile img{width:auto;height:clamp(64px,8vw,88px);display:block}
+.stats .badge-tile span{margin-top:.3rem}
+
+/* swipe affordance for the notes (phones only) */
+.swipe-hint,.swipe-ctl{display:none}
+
+/* consistent heading rhythm: 1.2rem from a heading to its text, 2rem to a group of cards, 3rem above a sub-heading */
+.wrap h2 + p,.sub{margin-top:1.2rem}
+.why .cards,.feature,.kinds{margin-top:2rem}
+.faq .reveal + .fgroup{margin-top:2rem}
+.notes-h,.also{margin-top:3rem}
+.how .two{margin-bottom:3rem}
+.vs{margin-top:3rem}
+.journey{margin-top:1.2rem}
+.seg{margin:1.2rem 0 1rem}
+.services .svcs{margin-top:1.2rem}
+
+@media (max-width:860px){
+  .proof .wrap{padding-top:1.1rem}
+  .proof-lede{line-height:1.15;margin-bottom:1rem}
+  .notes{margin-top:.4rem;padding-top:1.2rem;padding-bottom:.6rem;scrollbar-width:none}
+  .notes::-webkit-scrollbar{display:none}
+  .stats .badge-tile img{height:84px}
+  .swipe-hint{display:inline-flex;align-items:center;gap:.4rem;margin:.8rem 0 0;background:var(--ink);color:var(--sun);font-weight:700;font-size:.95rem;border-radius:999px;padding:.35rem .9rem}
+  .swipe-hint span{display:inline-block;animation:nudge 1.4s ease-in-out infinite}
+  @keyframes nudge{50%{transform:translateX(5px)}}
+  .swipe-ctl{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:.4rem}
+  .sw-btn{width:2.8rem;height:2.8rem;border-radius:50%;border:3px solid var(--ink);background:var(--paper);color:var(--ink);font:700 1.2rem/1 var(--f-body);cursor:pointer;box-shadow:3px 3px 0 var(--ink)}
+  .sw-btn:disabled{opacity:.35;box-shadow:none}
+  .sw-dots{display:flex;gap:.45rem}
+  .sw-dots i{width:.6rem;height:.6rem;border-radius:50%;border:2px solid var(--ink);background:transparent;transition:background .2s,transform .2s}
+  .sw-dots i.on{background:var(--ink);transform:scale(1.2)}
+}
+
+@media (max-width:860px){.menu a.burger-only{display:block!important}}
+.card #pcEmpty[hidden]{display:none}
+</style>
+<style>
+/* scene animations */
+.sw{transform-box:fill-box;transform-origin:50% 0;animation:swing 3.4s ease-in-out infinite}
+.sw2{animation-delay:-1.1s;animation-duration:4.1s}.sw3{animation-delay:-2.2s;animation-duration:3.1s}.sw4{animation-delay:-.6s;animation-duration:4.6s}
+@keyframes swing{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(9deg)}}
+.cl{animation:drift 26s linear infinite alternate}.cl2{animation-duration:34s;animation-delay:-9s}
+@keyframes drift{from{transform:translateX(-30px)}to{transform:translateX(60px)}}
+.rays{transform-box:fill-box;transform-origin:center;animation:spin 30s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.crown{transform-box:fill-box;transform-origin:50% 100%;animation:sway 6s ease-in-out infinite}
+@keyframes sway{50%{transform:rotate(1.8deg)}}
+.wl,.wr{transform-box:fill-box;animation:flap .9s ease-in-out infinite}
+.wl{transform-origin:100% 50%}.wr{transform-origin:0 50%}
+@keyframes flap{50%{transform:scaleX(.45)}}
+</style>
+
+<header class="top"><div class="in">
+  <a class="logo" href="#top" aria-label="Tilly ADHD Studio, back to top">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><g stroke="#1d1647" stroke-width="2.4" stroke-linejoin="round">
+      <path class="wl" d="M19 20 L4 6 Q1 18 10 24 Z" fill="#ff4d3d"/><path class="wr" d="M21 20 L36 6 Q39 18 30 24 Z" fill="#2f4bff"/>
+      <path class="wl" d="M19 21 L7 36 Q18 36 19 24 Z" fill="#ffd23f"/><path class="wr" d="M21 21 L33 36 Q22 36 21 24 Z" fill="#ff8fc0"/>
+      <rect x="18.4" y="10" width="3.2" height="22" rx="1.6" fill="#1d1647"/></g></svg>
+    <span>Tilly ADHD Studio<small>ADHD coaching</small></span>
+  </a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav class="menu" id="menu" aria-label="Main">
+    <a class="l" href="#why">Why me</a><a class="l" href="#about">About me</a><a class="l" href="#how">How I work</a>
+    <a class="l" href="#services">Services</a><a class="l" href="#faq">Questions</a>
+    <a class="btn small" href="#contact">Free chat</a><a class="l burger-only" href="#contact" style="display:none">Contact</a>
+  </nav>
+</div></header>
+
+<main id="top">
+<section class="band hero" aria-labelledby="h-hero">
+  <canvas id="fly" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div>
+      <span class="where"><i></i>Near Stowmarket, Suffolk &middot; online too</span>
+      <h1 id="h-hero">ADHD coaching for the<br> <span class="tail"><span class="swap" id="swap">overwhelmed</span> brain</span></h1>
+      <p class="lede"><strong class="hi">Hello, I'm Natalie.</strong> I offer face-to-face and online ADHD coaching, and creative retreat days, from my garden art studio just outside Stowmarket.<span class="motto">Come as you are. The mask can stay at the door.</span></p>
+      <div class="cta">
+        <a class="btn" href="#contact">Book a free 30-minute chat</a>
+        <a class="btn alt" href="#how">See how coaching works</a>
+      </div>
+    </div>
+    <div class="collage">
+      <figure class="polaroid" style="margin:0">
+        <img src="photos/4.jpg" width="828" height="1100" alt="Natalie's garden studio seen through cherry leaves, with a yellow birdcage hanging from the tree" fetchpriority="high">
+        <figcaption>my garden studio, Suffolk</figcaption>
+      </figure>
+      <div class="sticker s1" data-drag><div class="burst">Free 30 min chat</div></div>
+      <div class="sticker s2" data-drag><div class="burst">No diagnosis needed</div></div>
+      <span class="hand hint" aria-hidden="true">psst, drag the stickers</span>
+    </div>
+  </div>
+</section>
+<div class="edge" style="background:var(--sun);color:var(--ink)"></div>
+
+<div class="ticker" aria-label="Things we can work on: masking, shame spirals, overwhelm, procrastination, disorganisation, working memory, relationships, dopamine needs, self-trust">
+  <div class="track" aria-hidden="true">
+    <span>Masking</span><span>Shame spirals</span><span>Overwhelm</span><span>Starting things</span><span>Finishing things</span><span>Working memory</span><span>Rejection sensitivity</span><span>Dopamine needs</span><span>Self-trust</span><span>Burnout</span>
+    <span>Masking</span><span>Shame spirals</span><span>Overwhelm</span><span>Starting things</span><span>Finishing things</span><span>Working memory</span><span>Rejection sensitivity</span><span>Dopamine needs</span><span>Self-trust</span><span>Burnout</span>
+  </div>
+</div>
+<section class="band proof" aria-label="Natalie's experience at a glance">
+  <div class="wrap">
+    <p class="proof-lede">Lived experience, backed by decades of professional practice</p>
+    <ul class="stats">
+      <li class="reveal"><b data-count="28" data-suffix=" yrs">28 yrs</b><span>as a qualified Social Worker</span></li>
+      <li class="reveal"><b data-count="18" data-suffix=" yrs">18 yrs</b><span>with a national mental health charity</span></li>
+      <li class="reveal"><b>2022</b><span>my own ADHD diagnosis</span></li>
+      <li class="reveal badge-tile"><img src="photos/badge.png" width="300" height="316" alt="Barrett Coaching and Training: Qualified ADHD Coach badge"><span>Qualified ADHD coach</span></li>
+    </ul>
+  </div>
+</section>
+<div class="edge" style="background:var(--ink);color:var(--paper)"></div>
+
+<section class="band why" id="why" aria-labelledby="h-why">
+  <div class="wrap">
+    <div class="reveal">
+      <h2 id="h-why">Why work with me?</h2>
+      <p class="sub">Three things I bring that most coaches can't offer together.</p>
+    </div>
+    <div class="cards">
+      <article class="wcard reveal" style="--c:var(--mint);--r:-1.5deg">
+        <span class="n" aria-hidden="true">1</span>
+        <h3>I've lived it</h3>
+        <p class="key">I know ADHD from the inside.</p>
+        <p>Feeling misunderstood, overwhelmed and inconsistent. Great ideas that never get started. The masking, the shame, the rejection sensitivity and the creative bursts. I also know the huge relief of finally understanding my brain. That's the bit I want to help you find.</p>
+      </article>
+      <article class="wcard reveal" style="--c:var(--pink);--r:1.2deg">
+        <span class="n" aria-hidden="true">2</span>
+        <h3>I know the territory</h3>
+        <p class="key">28 years as a Social Worker. 18 in mental health.</p>
+        <p>I've spent 18 years at a national mental health charity, working directly with people on their ADHD journey. I'm a qualified ADHD coach, trained with Barrett Coaching and Training, and a confidential, safe space matters hugely to me.</p>
+      </article>
+      <article class="wcard reveal" style="--c:var(--sun);--r:-1deg">
+        <span class="n" aria-hidden="true">3</span>
+        <h3>Coaching built for ADHD</h3>
+        <p class="key">No generic advice. Your agenda, always.</p>
+        <p>Together we'll understand your wiring, patterns, strengths and values, and the barriers in the way. Then we build strategies that move you forward, instead of round the same loops that keep you stuck.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<div class="edge" style="background:var(--paper);color:var(--pink)"></div>
+
+<section class="band about" id="about" aria-labelledby="h-about">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <span class="eyebrow">Meet your coach</span>
+        <h2 id="h-about">Hi, I'm Natalie</h2>
+        <p class="big" style="margin-top:1.2rem">I was diagnosed with ADHD in 2022, and it took time to process. A year later I joined a group coaching session and <strong>everything changed</strong>. We recognised each other's stories, we were honest, and we really connected. I left with an exhilarating sense of belonging, and that's what inspired me to train as an ADHD coach.</p>
+        <p>Understanding my ADHD showed me how much I'd been carrying that never belonged to me: the self-blame, the shame, the confusion, and every reason I'd found for not moving forward. Once I knew my brain worked differently, I could finally offer myself compassion, and the courage to go after a life I'd only dared to dream about.</p>
+        <p class="quote">I love helping people tackle their barriers and limiting beliefs, and spot the best parts of themselves.</p>
+        <p>For 18 years I've worked with a national mental health charity, supporting people through exactly the things ADHD makes hard: <strong>starting and finishing tasks, impulse control, emotional dysregulation, shame spirals, self-trust, relationships, prioritising and organising.</strong> I'm also a qualified Social Worker, with 28 years' experience across addiction, offending behaviour, housing and mental health.</p>
+        <aside class="spot">
+          <h3>I hear what isn't said</h3>
+          <p>I have a cochlear implant, and it's made me an exceptional listener. I notice what's said and, spookily, what isn't. In coaching, that's often where the real story is.</p>
+        </aside>
+      </div>
+      <figure class="polaroid reveal" style="margin:0;--rv:4deg">
+        <img src="photos/1.jpg" width="596" height="1100" alt="Natalie laughing as she paints a bright silk flower design at her studio table" loading="lazy">
+        <figcaption>me, happiest with a paintbrush</figcaption>
+      </figure>
+    </div>
+    <h3 class="notes-h reveal hand" style="font-size:clamp(2rem,4vw,2.8rem)">A few more things about me&hellip;</h3>
+    <p class="swipe-hint" aria-hidden="true">Swipe for more <span>&rarr;</span></p>
+    <ul class="notes" id="notes">
+      <li class="note reveal" style="--c:var(--sun);--r:-2deg">I'm an extravert who loves peace. I've finally allowed myself to slow down, to keep burnout at bay.</li>
+      <li class="note reveal" style="--c:var(--lilac);--r:2deg">I can hyperfocus on the tiniest scraps of fabric and paper for hours.</li>
+      <li class="note reveal" style="--c:#fff;--r:1deg">I know the despair of creating chaos while cleaning the house. My partner once mistook my cleaning spree for a burglary. True!</li>
+      <li class="note reveal" style="--c:var(--tangerine);--r:-2deg">I love colour, creativity and bringing people together.</li>
+      <li class="note reveal" style="--c:var(--mint);--r:1deg">Burnout can feel permanent. Moving through it takes radical acceptance and deep rest.</li>
+      <li class="note reveal" style="--c:var(--sun);--r:-1deg">When menopause hit, my vaguely methodical brain jumped ship. It took a while to find strategies that work.</li>
+    </ul>
+    <div class="swipe-ctl">
+      <button type="button" class="sw-btn" id="swPrev" aria-label="Previous note">&larr;</button>
+      <span class="sw-dots" id="swDots" aria-hidden="true"></span>
+      <button type="button" class="sw-btn" id="swNext" aria-label="Next note">&rarr;</button>
+    </div>
+  </div>
+</section>
+<div class="edge" style="background:var(--pink);color:var(--ink)"></div>
+
+<section class="band qband" aria-label="A note from Natalie">
+  <div class="wrap">
+    <figure class="polaroid reveal" style="margin:0;--rv:-3deg">
+      <img src="photos/3.jpg" width="825" height="1100" alt="Natalie smiling at her studio table, painting a large silk design" loading="lazy">
+    </figure>
+    <blockquote class="reveal">
+      <p>&ldquo;I know exactly how it feels to try your best, and for it still not to be enough. You don't have to keep doing this on your own.&rdquo;</p>
+      <footer>Natalie, ADHD coach</footer>
+      <a class="btn alt" href="#contact">Book a free 30-minute chat</a>
+    </blockquote>
+  </div>
+</section>
+<div class="edge" style="background:var(--ink);color:var(--blue)"></div>
+
+<section class="band bubblesec" aria-labelledby="h-bub">
+  <div class="wrap">
+    <div class="intro reveal">
+      <span class="eyebrow">Sound familiar?</span>
+      <h2 id="h-bub">What's going on in there?</h2>
+      <p>From the outside, ADHD can look like laziness or lack of effort. From the inside it's masking, overwhelm, big ideas that stall at the starting line and a very loud inner critic. I know these well, from 18 years alongside people on their ADHD journey and from my own head.</p>
+      <p><strong>Pop a bubble</strong> to see how it can feel, and what we might try together.</p>
+    </div>
+    <div class="bubbles" id="bubbles"></div>
+    <div class="bubpanel" id="panel" aria-live="polite">
+      <h3>Pick any bubble</h3>
+      <div><h4>How it can feel</h4><p>Each one is something ADHD brains know well. There's no wrong order.</p></div>
+      <div><h4>In coaching we might</h4><p>Explore it together, gently, at your pace, with plenty of curiosity.</p></div>
+    </div>
+  </div>
+</section>
+<div class="edge" style="background:var(--blue);color:var(--lilac)"></div>
+
+<section class="band how" id="how" aria-labelledby="h-how">
+  <div class="wrap">
+    <div class="two">
+      <div class="reveal">
+        <span class="eyebrow">Gentle, curious, practical</span>
+        <h2 id="h-how">How I work</h2>
+        <p style="margin-top:1.2rem" class="big">Coaching happens <strong>online by video, or face to face in my garden studio</strong>. It always starts with a free 30-minute chat about where you'd like to go.</p>
+        <p>I use a proven neuro-affirming framework. My approach is collaborative, curious, creative and trauma informed. Together we'll explore your ADHD brain, soften your inner critic and strengthen your inner coach, so you can build confidence and change that lasts.</p>
+      </div>
+      <figure class="polaroid reveal" style="margin:0;--rv:-3deg">
+        <img src="photos/5.jpg" width="825" height="1100" alt="Natalie painting silk at a patterned table in her studio, with paints and a cup of tea beside her" loading="lazy">
+        <figcaption>colour everywhere, on purpose</figcaption>
+      </figure>
+    </div>
+
+    <h3 class="hand reveal" style="font-size:clamp(1.8rem,3.6vw,2.5rem)">What coaching looks like</h3>
+    <div class="journey reveal" id="journey">
+      <svg class="line" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true"><path id="jpath" d="M0 30 C125 -10 125 70 250 30 S375 -10 500 30 S625 70 750 30 S875 -10 1000 30" fill="none" stroke="#1d1647" stroke-width="3" stroke-dasharray="3 10" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>
+      <svg class="bfly" id="bfly" viewBox="0 0 40 40" aria-hidden="true"><g stroke="#1d1647" stroke-width="2.4" stroke-linejoin="round">
+        <path class="wl" d="M19 20 L4 6 Q1 18 10 24 Z" fill="#ff4d3d"/><path class="wr" d="M21 20 L36 6 Q39 18 30 24 Z" fill="#2f4bff"/>
+        <path class="wl" d="M19 21 L7 36 Q18 36 19 24 Z" fill="#ffd23f"/><path class="wr" d="M21 21 L33 36 Q22 36 21 24 Z" fill="#ff8fc0"/>
+        <rect x="18.4" y="10" width="3.2" height="22" rx="1.6" fill="#1d1647"/></g></svg>
+      <div class="vline" aria-hidden="true"></div><div class="vfill" aria-hidden="true"></div>
+      <ol class="steps">
+        <li class="step"><span class="badge">1</span><h3>A free chat</h3><p>Thirty relaxed minutes to see if we're a good match and where you'd like to head.</p></li>
+        <li class="step"><span class="badge">2</span><h3>Meet your ADHD brain</h3><p>We explore your wiring, your patterns, and what's really going on underneath the overwhelm.</p></li>
+        <li class="step"><span class="badge">3</span><h3>Values, strengths, barriers</h3><p>Your motivations, your fears and the things that get in the way, all out on the table.</p></li>
+        <li class="step"><span class="badge">4</span><h3>A clear path, at your pace</h3><p>Strategies that suit your brain, including healthy ways to meet your dopamine needs without burning out.</p></li>
+      </ol>
+    </div>
+
+    <div class="vs reveal">
+      <h3 class="hand" style="font-size:clamp(1.8rem,3.6vw,2.5rem)">Coaching or therapy?</h3>
+      <div class="seg" role="group" aria-label="Compare coaching and therapy">
+        <button type="button" id="vsC" aria-pressed="true">Coaching</button>
+        <button type="button" id="vsT" aria-pressed="false">Therapy</button>
+      </div>
+      <div class="vsbox" id="vsbox" aria-live="polite"><p>Coaching is practical. We look at where you are now, where you'd like to be and how you can get there, one step at a time. <u class="bound">I stay within coaching boundaries</u>.</p></div>
+    </div>
+  </div>
+</section>
+<div class="edge" style="background:var(--lilac);color:var(--mint)"></div>
+
+<section class="band services" id="services" aria-labelledby="h-svc">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Ways to work together</span>
+      <h2 id="h-svc">ADHD coaching, one to one</h2>
+    </div>
+
+    <article class="feature reveal">
+      <header>
+        <div><span class="tag">Main offer</span><h3>1:1 ADHD coaching</h3></div>
+        <div class="price-box"><span class="price">&pound;60</span><small>per 60-minute session</small></div>
+      </header>
+      <div class="fbody">
+        <div>
+          <p class="big">A focused block of six sessions, shaped entirely around the direction you want to take.</p>
+          <ul class="ticks">
+            <li><strong>Six 60-minute sessions</strong>, &pound;360 for the block</li>
+            <li><strong>Online by video</strong>, or <strong>face to face</strong> in my garden studio</li>
+            <li>We meet every <span class="tbc">week / fortnight</span></li>
+            <li>Payment: <span class="tbc">upfront or per session</span></li>
+            <li>Book further sessions any time for ongoing support</li>
+          </ul>
+        </div>
+        <div class="fcta">
+          <p><strong>Not sure yet?</strong> Start with a free, no-pressure 30-minute chat. We'll see whether we're a good match and whether coaching feels right for you.</p>
+          <a class="btn" href="#contact">Book your free chat</a>
+        </div>
+      </div>
+    </article>
+
+    <h3 class="hand reveal also" style="font-size:clamp(1.8rem,3.6vw,2.5rem)">Also from the studio</h3>
+    <div class="svcs">
+      <article class="svc reveal"><header style="--c:var(--lilac)"><div class="price">&pound;140</div><small>per person &middot; 10am until 5pm</small></header>
+        <div class="body"><h3>Creative ADHD retreat days</h3><p>1:1 or in a small group of up to 4. A day of creativity, reflection and connection in my garden studio. All materials and a veggie lunch included.</p><a class="btn small" href="#contact">Ask about a retreat day</a></div></article>
+      <article class="svc reveal"><header style="--c:var(--tangerine)"><div class="price">Let's talk</div><small>Creative Space for groups</small></header>
+        <div class="body"><h3>Groups, families and teams</h3><p>Families, friends, couples or work teams who want a shared creative experience. Get in touch and we'll shape a day that works for you.</p><a class="btn small" href="#contact">Get in touch</a></div></article>
+    </div>
+
+    <figure class="polaroid wide reveal" style="--rv:-1deg">
+      <img src="photos/2.jpg" width="1100" height="821" alt="The inside of the studio: a big patterned table, a patchwork chair, hanging mobiles, painted birds on the wall and a rack of handmade cards" loading="lazy">
+      <figcaption>the studio, ready for a retreat day</figcaption>
+    </figure>
+
+    <div class="builder reveal">
+      <div>
+        <h3>Dream up your retreat day</h3>
+        <p style="margin-top:.6rem">Tap whatever sounds good and watch the postcard fill up. Nothing is booked, it's just a way to picture it. Everything is optional, and we'll see what unfolds on the day.</p>
+        <div class="chips" id="ideas" role="group" aria-label="Retreat day ideas" style="margin-top:1rem">
+          <button type="button" class="chip" aria-pressed="false">Painting</button><button type="button" class="chip" aria-pressed="false">Collage</button>
+          <button type="button" class="chip" aria-pressed="false">Batik</button><button type="button" class="chip" aria-pressed="false">Origami mobiles</button>
+          <button type="button" class="chip" aria-pressed="false">A walk in the Suffolk countryside</button><button type="button" class="chip" aria-pressed="false">Quiet and stillness</button>
+          <button type="button" class="chip" aria-pressed="false">Lots of chatter</button><button type="button" class="chip" aria-pressed="false">My own project</button>
+        </div>
+        <p class="fine">Lunches are vegetarian or vegan. Tell me about dietary needs in advance and I'll do my best to fit them in.</p>
+      </div>
+      <div class="card" id="postcard" aria-live="polite">
+        <div class="stamp">Studio day</div>
+        <span class="hand">My day in the studio</span>
+        <p>10am until 5pm, with all materials and a veggie lunch.</p>
+        <p id="pcEmpty">Tap some ideas to fill this card.</p>
+        <ul id="pcList"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="edge" style="background:var(--mint);color:var(--tangerine)"></div>
+
+<section class="band timer" id="timer" aria-labelledby="h-timer">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <span class="eyebrow">A tiny freebie</span>
+        <h2 id="h-timer">Let's body double</h2>
+        <p style="margin-top:1.2rem;font-size:1.15rem">Body doubling means doing your task alongside another person. It's honestly one of the best support tools I know.</p>
+        <p>Until we can sit side by side, here's a little timer to borrow. Pick one small thing you've been avoiding, set a short time (a couple of minutes is plenty), press start, and watch the plant grow while you get on with it.</p>
+        <p>You don't need to stay on this page. The countdown keeps going and shows in your browser tab.</p>
+      </div>
+      <div class="tcard reveal" style="--rv:3deg">
+        <svg viewBox="0 0 200 230" role="img" aria-label="A plant that grows as the timer runs">
+          <g id="plant">
+            <path id="stem" d="M100 180 C100 150 96 120 100 74" fill="none" stroke="#1d1647" stroke-width="12" stroke-linecap="round"/>
+            <path id="stemIn" d="M100 180 C100 150 96 120 100 74" fill="none" stroke="#4fc26a" stroke-width="6" stroke-linecap="round"/>
+            <g id="leaf1" style="transform-box:fill-box;transform-origin:0 100%;transform:scale(0)"><path d="M99 140 C70 140 52 122 50 104 C76 102 96 116 99 140Z" fill="#4fc26a" stroke="#1d1647" stroke-width="3"/></g>
+            <g id="leaf2" style="transform-box:fill-box;transform-origin:100% 100%;transform:scale(0)"><path d="M101 118 C130 118 148 100 150 82 C124 80 104 94 101 118Z" fill="#35a85a" stroke="#1d1647" stroke-width="3"/></g>
+            <g id="bloom" style="transform-box:fill-box;transform-origin:50% 50%;transform:scale(0)">
+              <g fill="#ff8fc0" stroke="#1d1647" stroke-width="3"><ellipse cx="100" cy="46" rx="11" ry="19"/><ellipse cx="100" cy="46" rx="11" ry="19" transform="rotate(60 100 70)"/><ellipse cx="100" cy="46" rx="11" ry="19" transform="rotate(120 100 70)"/><ellipse cx="100" cy="46" rx="11" ry="19" transform="rotate(180 100 70)"/><ellipse cx="100" cy="46" rx="11" ry="19" transform="rotate(240 100 70)"/><ellipse cx="100" cy="46" rx="11" ry="19" transform="rotate(300 100 70)"/></g>
+              <circle cx="100" cy="70" r="13" fill="#ffd23f" stroke="#1d1647" stroke-width="3"/>
+            </g>
+          </g>
+          <path d="M62 182h76l-10 40H72z" fill="#ff4d3d" stroke="#1d1647" stroke-width="3.5" stroke-linejoin="round"/><rect x="56" y="174" width="88" height="14" rx="4" fill="#ff7a6b" stroke="#1d1647" stroke-width="3.5"/>
+        </svg>
+        <div class="clock" id="clock" role="timer" aria-live="off">02:00</div>
+        <div class="tlen" role="group" aria-label="Timer length">
+          <button type="button" class="chip" data-s="60" aria-pressed="false">1 min</button>
+          <button type="button" class="chip" data-s="120" aria-pressed="true">2 min</button>
+          <button type="button" class="chip" data-s="300" aria-pressed="false">5 min</button>
+        </div>
+        <div class="tcustom" role="group" aria-label="Set your own time">
+          <span>or your own:</span>
+          <label><input type="number" id="tmin" min="0" max="60" value="2" inputmode="numeric" aria-label="Minutes"> min</label>
+          <label><input type="number" id="tsec" min="0" max="59" step="5" value="0" inputmode="numeric" aria-label="Seconds"> sec</label>
+        </div>
+        <div class="tbtns"><button type="button" class="btn small" id="tgo">Start</button><button type="button" class="btn small alt" id="trs">Reset</button></div>
+        <p class="tmsg" id="tmsg" aria-live="polite">One small thing. That's all.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="edge" style="background:var(--tangerine);color:var(--sun)"></div>
+
+<section class="band kind" aria-labelledby="h-kind">
+  <div class="wrap">
+    <div class="reveal"><h2 id="h-kind">What people say</h2></div>
+    <div class="kinds">
+      <figure class="kq reveal" style="--r:-1deg"><blockquote>&ldquo;My perfect day.&rdquo;</blockquote><figcaption>Retreat day guest</figcaption></figure>
+      <figure class="kq reveal" style="--r:1deg"><blockquote><span class="tbc">Short quote from a coaching client</span></blockquote><figcaption>Coaching client</figcaption></figure>
+      <figure class="kq reveal" style="--r:-.5deg"><blockquote><span class="tbc">Short quote from a coaching client</span></blockquote><figcaption>Coaching client</figcaption></figure>
+    </div>
+  </div>
+</section>
+<div class="edge" style="background:var(--sun);color:var(--paper)"></div>
+
+<section class="band faq" id="faq" aria-labelledby="h-faq">
+  <div class="wrap">
+    <div class="reveal"><h2 id="h-faq">Frequently asked questions</h2></div>
+    <h3 class="fgroup reveal">About coaching</h3>
+    <div class="list">
+      <details class="reveal" style="--c:var(--sun)"><summary>What happens in a coaching session?</summary><p>Each session is guided by your agenda. We look at what's going on for you, get curious about your patterns and what's in the way, and find a next step that's genuinely doable for your brain. You leave with something practical to try, not a lecture.</p></details>
+      <details class="reveal" style="--c:var(--pink)"><summary>How much does coaching cost?</summary><p>&pound;60 per 60-minute session, booked as a block of six (&pound;360). Payment is <span class="tbc">upfront or per session</span>. Further sessions can be booked afterwards if you'd like ongoing support. The first 30-minute chat is always free.</p></details>
+      <details class="reveal" style="--c:var(--mint)"><summary>Online or face to face?</summary><p>Either. We can meet by video wherever you are, or face to face in my garden studio just outside Stowmarket. Just say which you'd prefer when we have our free chat.</p></details>
+      <details class="reveal" style="--c:var(--lilac)"><summary>Do I need a diagnosis?</summary><p>No. Whether you're diagnosed, on a waiting list or just wondering, you're welcome exactly as you are.</p></details>
+      <details class="reveal" style="--c:var(--tangerine)"><summary>Is this therapy?</summary><p>No, this is coaching, and <u class="bound">I stay within coaching boundaries</u>. Coaching is practical: where you are now, where you want to be and how to get there. Therapy helps you understand and heal from what has happened.</p></details>
+    </div>
+    <h3 class="fgroup reveal">About retreat days</h3>
+    <div class="list">
+      <details class="reveal" style="--c:var(--sun)"><summary>Do I need to be creative?</summary><p>Not at all. Creative exploration is optional and open to everyone. Some days are full of fun and chatter, others are a chance to unwind and find stillness. We'll see what unfolds.</p></details>
+      <details class="reveal" style="--c:var(--pink)"><summary>What's included, and what should I bring?</summary><p>Just yourself, plus any project you'd like to focus on. All materials, refreshments and a vegetarian or vegan lunch are provided. Let me know about dietary needs in advance. We can try painting, collage, batik or origami mobiles, and there's Suffolk countryside right outside if you'd like a walk.</p></details>
+      <details class="reveal" style="--c:var(--mint)"><summary>Is the studio accessible?</summary><p>The property is single-level with a few small steps, and there's a small step into the studio through a patio door. Inside it's quiet, calm and sensory-friendly, and I'm happy to adapt the space to your needs where I can.</p></details>
+    </div>
+    <p class="note-x reveal">However we work together, I'll make sure you feel safe and listened to. People pleasing and masking can be left at the door.</p>
+  </div>
+</section>
+<div class="edge" style="background:var(--paper);color:var(--blue)"></div>
+
+<section class="band contact" id="contact" aria-labelledby="h-contact">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <h2 id="h-contact">Say hello</h2>
+        <p style="margin-top:1.2rem;font-size:1.15rem">Let me know how I can help and I'll get back to you as soon as I can. A free 30-minute chat is a lovely place to start.</p>
+        <p>Email me at <span class="addr" id="addr">nat@tillyadhdstudio.co.uk</span></p>
+        <figure class="polaroid" style="margin:2rem auto 0;--rv:-3deg">
+          <img src="photos/4.jpg" width="828" height="1100" alt="The garden studio seen through cherry leaves, with a yellow birdcage hanging from the tree and glass doors onto a gravel courtyard" loading="lazy">
+          <figcaption>the studio, at the bottom of the garden</figcaption>
+        </figure>
+      </div>
+      <form class="form reveal" id="f" autocomplete="off" style="--rv:2deg">
+        <label id="lblIdeas">What's on your mind? Tap any that fit.</label>
+        <div class="chips" id="topics" role="group" aria-labelledby="lblIdeas" style="margin:0">
+          <button type="button" class="chip" aria-pressed="false">Starting things</button><button type="button" class="chip" aria-pressed="false">Overwhelm</button>
+          <button type="button" class="chip" aria-pressed="false">Shame and self-criticism</button><button type="button" class="chip" aria-pressed="false">Masking</button>
+          <button type="button" class="chip" aria-pressed="false">Relationships</button><button type="button" class="chip" aria-pressed="false">Burnout</button>
+          <button type="button" class="chip" aria-pressed="false">A retreat day</button><button type="button" class="chip" aria-pressed="false">Just curious</button>
+        </div>
+        <label for="nm">Your name</label>
+        <input type="text" id="nm" placeholder="First name is plenty">
+        <label for="more">Anything else you'd like me to know?</label>
+        <textarea id="more" placeholder="Whatever feels right. Short is fine."></textarea>
+        <div class="draft" id="draft" aria-live="polite"></div>
+        <div class="actions">
+          <button type="button" class="btn small" id="copy">Copy message</button>
+          <a class="btn small alt" id="mail" href="mailto:nat@tillyadhdstudio.co.uk">Open in my email app</a>
+        </div>
+        <p class="fine" id="copied" aria-live="polite">Nothing is sent from this page. Copy the message into your own email, or tap the second button if your device opens its email app.</p>
+      </form>
+    </div>
+  </div>
+</section>
+<div class="edge" style="background:var(--blue);color:var(--ink)"></div>
+</main>
+
+<div class="sheet-bg" id="sheetBg" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-labelledby="sheetH" hidden>
+  <div class="sheet-in" id="sheetIn">
+    <h3 id="sheetH" tabindex="-1"></h3>
+    <h4>How it can feel</h4><p id="sheetFeel"></p>
+    <h4>In coaching we might</h4><p id="sheetTry"></p>
+  </div>
+  <div class="sheet-btns"><button type="button" class="btn small alt" id="sheetClose">Close</button><button type="button" class="btn small" id="sheetNext">Next bubble &rarr;</button></div>
+</div>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="logo" href="#top">Tilly ADHD Studio</a>
+    <p>ADHD coaching online and in my garden art studio, just outside Stowmarket, Suffolk.</p>
+    <p>nat@tillyadhdstudio.co.uk</p>
+    <p style="font-size:.85rem;opacity:.75"><u class="bound">Coaching, not therapy.</u> You are welcome exactly as you are.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+var RM = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+var INK = '#1d1647';
+var $ = function(s,r){return (r||document).querySelector(s)};
+var $$ = function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+
+/* torn paper edges between bands */
+var seed = 11;
+function srnd(){ seed = (seed*16807) % 2147483647; return (seed-1)/2147483646; }
+$$('.edge').forEach(function(el){
+  var d = 'M0 60 L0 ' + (20+srnd()*14).toFixed(1);
+  for (var x=0; x<1000; x += 12 + Math.floor(srnd()*16)) d += ' L' + x + ' ' + (5+srnd()*32).toFixed(1);
+  d += ' L1000 ' + (20+srnd()*14).toFixed(1) + ' L1000 60 Z';
+  el.innerHTML = '<svg viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true"><path d="'+d+'" fill="currentColor"/></svg>';
+});
+
+/* small confetti burst, used by bubbles, stickers and the timer */
+var CONF = ['#ff4d3d','#2f4bff','#ff8fc0','#79e0b4','#ffd23f','#c9b8ff','#ff9b2f'];
+function burst(x, y, n){
+  if (RM || !document.body.animate) return;
+  n = n || 16;
+  for (var i=0; i<n; i++){
+    var p = document.createElement('i');
+    p.className = 'conf';
+    p.style.background = CONF[i % CONF.length];
+    p.style.border = '2px solid ' + INK;
+    if (i % 3 === 0) p.style.borderRadius = '50%';
+    document.body.appendChild(p);
+    var a = Math.random()*Math.PI*2, dist = 50 + Math.random()*110;
+    var dx = Math.cos(a)*dist, dy = Math.sin(a)*dist - 30;
+    var an = p.animate([
+      {transform:'translate('+x+'px,'+y+'px) rotate(0deg) scale(1)', opacity:1},
+      {transform:'translate('+(x+dx)+'px,'+(y+dy)+'px) rotate('+(Math.random()*540-270)+'deg) scale(.9)', opacity:1, offset:.6},
+      {transform:'translate('+(x+dx*1.1)+'px,'+(y+dy+90)+'px) rotate('+(Math.random()*720-360)+'deg) scale(.6)', opacity:0}
+    ], {duration:900+Math.random()*400, easing:'cubic-bezier(.2,.7,.4,1)'});
+    an.onfinish = (function(el){return function(){el.remove()}})(p);
+  }
+}
+
+/* menu */
+var burger = $('#burger'), menu = $('#menu');
+burger.addEventListener('click', function(){
+  var open = menu.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+$$('#menu a').forEach(function(a){ a.addEventListener('click', function(){
+  menu.classList.remove('open'); burger.setAttribute('aria-expanded','false');
+}); });
+
+/* notes carousel on phones: arrows, dots, and one gentle nudge so it's obvious you can swipe */
+var notesEl = $('#notes'), swDots = $('#swDots'), swPrev = $('#swPrev'), swNext = $('#swNext');
+var noteItems = $$('.note', notesEl);
+noteItems.forEach(function(){ swDots.appendChild(document.createElement('i')); });
+function noteIndex(){
+  var best = 0, bd = 1e9, left = notesEl.getBoundingClientRect().left;
+  noteItems.forEach(function(n, i){ var d = Math.abs(n.getBoundingClientRect().left - left); if (d < bd){ bd = d; best = i; } });
+  return best;
+}
+function atEnd(){ return notesEl.scrollLeft + notesEl.clientWidth >= notesEl.scrollWidth - 4; }
+function syncNotes(){
+  var i = atEnd() && notesEl.scrollLeft > 4 ? noteItems.length - 1 : noteIndex();
+  $$('i', swDots).forEach(function(d, k){ d.classList.toggle('on', k === i); });
+  swPrev.disabled = notesEl.scrollLeft < 4;
+  swNext.disabled = atEnd();
+}
+function goNote(dir){
+  var i = Math.max(0, Math.min(noteItems.length - 1, noteIndex() + dir));
+  notesEl.scrollTo({left: noteItems[i].offsetLeft - noteItems[0].offsetLeft, behavior: RM ? 'auto' : 'smooth'});
+}
+swPrev.addEventListener('click', function(){ goNote(-1); });
+swNext.addEventListener('click', function(){ goNote(1); });
+notesEl.addEventListener('scroll', syncNotes, {passive:true});
+syncNotes();
+if (!RM && 'IntersectionObserver' in window){
+  var nudged = false;
+  var nio = new IntersectionObserver(function(es){
+    if (nudged || !es[0].isIntersecting || notesEl.scrollWidth <= notesEl.clientWidth) return;
+    nudged = true; nio.disconnect();
+    setTimeout(function(){
+      notesEl.scrollTo({left: 70, behavior: 'smooth'});
+      setTimeout(function(){ notesEl.scrollTo({left: 0, behavior: 'smooth'}); }, 650);
+    }, 500);
+  }, {threshold: .6});
+  nio.observe(notesEl);
+}
+
+/* scroll reveal: content fades and rises in once, cards in a group arrive one after another */
+var rv = $$('.reveal');
+['.stats', '.why .cards', '.notes', '.svcs', '.kinds', '.faq .list'].forEach(function(sel){
+  $$(sel).forEach(function(g){
+    $$(':scope > .reveal', g).forEach(function(el, i){ el.style.transitionDelay = (i*.12).toFixed(2) + 's'; });
+  });
+});
+function countUp(el){
+  var n = parseInt(el.getAttribute('data-count'), 10), suf = el.getAttribute('data-suffix') || '', t0 = 0;
+  function step(t){
+    if (!t0) t0 = t;
+    var p = Math.min(1, (t - t0)/1300);
+    el.textContent = Math.round(n*(1 - Math.pow(1 - p, 3))) + suf;
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+if (document.documentElement.classList.contains('js-reveal')){
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (!e.isIntersecting) return;
+      var el = e.target;
+      el.classList.add('in'); io.unobserve(el);
+      $$('[data-count]', el).forEach(countUp);
+      if (el.style.transitionDelay) setTimeout(function(){ el.style.transitionDelay = ''; }, 1500);
+    });
+  }, {threshold:.12, rootMargin:'0px 0px -6% 0px'});
+  rv.forEach(function(el){ io.observe(el); });
+} else { rv.forEach(function(el){ el.classList.add('in'); }); }
+window.__revealReady = true;
+
+/* rotating word in the headline */
+var swap = $('#swap');
+var words = ['overwhelmed','creative','hyperfocused','forgetful','brilliant','sensitive','restless','curious'];
+var wi = 0;
+/* size the word box to the longest word, then shrink the headline if that word plus "brain" would not fit on one line */
+function fitSwap(){
+  var h = swap.closest('h1'), tail = swap.parentNode;
+  h.style.fontSize = '';
+  var fs = parseFloat(getComputedStyle(h).fontSize);
+  var m = document.createElement('span');
+  m.className = 'swap'; m.setAttribute('aria-hidden', 'true');
+  m.style.cssText = 'position:absolute;left:-9999px;top:0;visibility:hidden;min-width:0';
+  h.appendChild(m);
+  var w = 0;
+  words.forEach(function(t){ m.textContent = t; w = Math.max(w, m.offsetWidth); });
+  m.remove();
+  swap.style.minWidth = (w/fs).toFixed(3) + 'em';
+  /* also fit the first line ("ADHD coaching for the") so the headline is two full lines;
+     if that would make the text too small, settle for three lines instead */
+  m.style.cssText = 'position:absolute;left:-9999px;top:0;visibility:hidden;white-space:nowrap';
+  m.className = ''; m.textContent = h.firstChild.textContent.trim();
+  h.appendChild(m);
+  var line1 = m.offsetWidth + 4;
+  m.remove();
+  var room = h.clientWidth, need = tail.offsetWidth + 8;
+  var size = fs*Math.min(1, room/need), both = fs*Math.min(1, room/need, room/line1);
+  if (both >= 26) size = both;
+  if (size < fs) h.style.fontSize = size.toFixed(1) + 'px';
+}
+fitSwap();
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitSwap);
+var fsT; window.addEventListener('resize', function(){ clearTimeout(fsT); fsT = setTimeout(fitSwap, 150); });
+if (!RM){
+  setInterval(function(){
+    if (document.hidden) return;
+    wi = (wi + 1) % words.length;
+    swap.classList.remove('flip'); void swap.offsetWidth; swap.classList.add('flip');
+    setTimeout(function(){ swap.textContent = words[wi]; }, 220);
+  }, 2600);
+}
+
+/* draggable stickers */
+$$('[data-drag]').forEach(function(el){
+  var sx=0, sy=0, ox=0, oy=0, down=false, moved=false;
+  el.addEventListener('pointerdown', function(e){
+    down = true; moved = false; sx = e.clientX - ox; sy = e.clientY - oy;
+    try { el.setPointerCapture(e.pointerId); } catch(_){}
+    el.classList.add('drag');
+  });
+  el.addEventListener('pointermove', function(e){
+    if (!down) return;
+    var nx = e.clientX - sx, ny = e.clientY - sy;
+    if (Math.abs(nx-ox) + Math.abs(ny-oy) > 3) moved = true;
+    ox = nx; oy = ny;
+    el.style.translate = ox + 'px ' + oy + 'px';
+  });
+  function up(e){
+    if (!down) return;
+    down = false; el.classList.remove('drag');
+    var r = el.getBoundingClientRect();
+    burst(r.left + r.width/2, r.top + r.height/2, moved ? 8 : 14);
+  }
+  el.addEventListener('pointerup', up);
+  el.addEventListener('pointercancel', function(){ down = false; el.classList.remove('drag'); });
+});
+
+/* flying paper butterflies and confetti behind the hero */
+var cv = $('#fly'), hero = cv.parentElement, ctx = cv.getContext('2d');
+var W = 0, H = 0, flies = [], bits = [], mx = 0, my = 0, active = false, running = false;
+var FC = ['#ff4d3d','#2f4bff','#ff8fc0','#79e0b4','#fffdf5','#c9b8ff','#ff9b2f'];
+function size(){
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+  W = hero.clientWidth; H = hero.clientHeight;
+  cv.width = W*dpr; cv.height = H*dpr;
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  var nf = Math.max(6, Math.min(15, Math.round(W/95)));
+  var nb = Math.max(10, Math.min(34, Math.round(W/42)));
+  flies = []; bits = [];
+  for (var i=0;i<nf;i++) flies.push({x:Math.random()*W,y:Math.random()*H,a:Math.random()*6.28,s:10+Math.random()*12,c:FC[i%FC.length],p:Math.random()*6,sp:.8+Math.random()*.8});
+  for (var k=0;k<nb;k++) bits.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*6.28,vr:(Math.random()-.5)*.03,s:6+Math.random()*10,vy:.15+Math.random()*.35,c:FC[k%FC.length],t:k%3,ph:Math.random()*6});
+}
+function wing(s, g, col){
+  ctx.fillStyle = col; ctx.strokeStyle = INK; ctx.lineWidth = 2; ctx.lineJoin = 'round';
+  ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(g*s*1.25,-s*1.15); ctx.lineTo(g*s*1.1,s*.05); ctx.closePath(); ctx.fill(); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(0,s*.1); ctx.lineTo(g*s*.95,s*.2); ctx.lineTo(g*s*.5,s*1.15); ctx.closePath(); ctx.fill(); ctx.stroke();
+}
+function draw(t){
+  ctx.clearRect(0,0,W,H);
+  bits.forEach(function(b){
+    if (running){ b.y += b.vy; b.x += Math.sin(t*.0009 + b.ph)*.25; b.r += b.vr; if (b.y > H+20){ b.y = -20; b.x = Math.random()*W; } }
+    ctx.save(); ctx.translate(b.x,b.y); ctx.rotate(b.r);
+    ctx.fillStyle = b.c; ctx.strokeStyle = INK; ctx.lineWidth = 1.6;
+    ctx.beginPath();
+    if (b.t === 0) ctx.rect(-b.s/2,-b.s/2,b.s,b.s);
+    else if (b.t === 1){ ctx.moveTo(0,-b.s*.6); ctx.lineTo(b.s*.6,b.s*.5); ctx.lineTo(-b.s*.6,b.s*.5); ctx.closePath(); }
+    else ctx.arc(0,0,b.s*.45,0,6.3);
+    ctx.fill(); ctx.stroke(); ctx.restore();
+  });
+  flies.forEach(function(f){
+    if (running){
+      f.p += .26*f.sp;
+      f.a += Math.sin(t*.0013 + f.s)*.03;
+      if (active){
+        var dx = mx-f.x, dy = my-f.y, d = Math.hypot(dx,dy);
+        if (d < 320 && d > 46){ var da = Math.atan2(dy,dx) - f.a; da = Math.atan2(Math.sin(da),Math.cos(da)); f.a += da*.04; }
+        else if (d <= 46){ f.a += .16; }
+      }
+      var v = .7*f.sp + (active ? .35 : 0);
+      f.x += Math.cos(f.a)*v; f.y += Math.sin(f.a)*v;
+      if (f.x < -40) f.x = W+40; if (f.x > W+40) f.x = -40;
+      if (f.y < -40) f.y = H+40; if (f.y > H+40) f.y = -40;
+    }
+    var w = Math.abs(Math.sin(f.p))*.75 + .25;
+    ctx.save(); ctx.translate(f.x,f.y); ctx.rotate(f.a + Math.PI/2);
+    ctx.save(); ctx.scale(w,1); wing(f.s,1,f.c); wing(f.s,-1,f.c); ctx.restore();
+    ctx.fillStyle = INK; ctx.fillRect(-1.6,-f.s*.65,3.2,f.s*1.4);
+    ctx.restore();
+  });
+}
+function loop(t){ if (!running) return; draw(t); requestAnimationFrame(loop); }
+size(); draw(0);
+if (!RM){
+  window.addEventListener('pointermove', function(e){
+    var r = hero.getBoundingClientRect();
+    mx = e.clientX - r.left; my = e.clientY - r.top;
+    active = my > 0 && my < r.height && mx > 0 && mx < r.width;
+  }, {passive:true});
+  if ('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      var vis = es[0].isIntersecting;
+      if (vis && !running){ running = true; requestAnimationFrame(loop); }
+      else if (!vis){ running = false; }
+    }).observe(hero);
+  } else { running = true; requestAnimationFrame(loop); }
+}
+var rt; window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(function(){ size(); draw(0); }, 200); });
+
+/* pop-a-bubble */
+var BUB = [
+  ['Masking','--sun',150,'Smiling, performing, working twice as hard to look like you have it together. By Friday you are running on fumes and nobody knows why.','Notice when the mask goes on, what it costs you, and where it might be safe to take it off.'],
+  ['Shame spirals','--pink',128,'One missed deadline turns into a verdict on your whole character, and the replay can go on for days.','Soften the inner critic and strengthen your inner coach, so mistakes stay mistakes.'],
+  ['Overwhelm','--mint',140,'Everything is equally loud, so nothing gets started. The to-do list feels like a wall.','Find the one next step and size it so it is genuinely doable, today.'],
+  ['Starting and finishing','--lilac',136,'You know exactly what to do and your brain will not pull the trigger. Or you start ten things and finish none.','Get curious about what is really in the way, instead of being told to try harder.'],
+  ['Disorganisation','--tangerine',124,'The cleaning spree that ends up looking like a burglary. Piles, lost keys and good intentions everywhere.','Build systems that suit your brain and survive a busy week, not a tidy one.'],
+  ['Working memory','--sun',132,'Walking into a room and forgetting why. Losing the thread halfway through a sentence.','Set up external memory: cues, visuals and routines that do the remembering for you.'],
+  ['Relationships','--pink',146,'Feeling misunderstood, or misunderstanding. Rejection sensitivity can make small things feel enormous.','Explore your patterns and needs, and find words for what you want to say.'],
+  ['Dopamine needs','--mint',130,'Chasing the buzz, then crashing. Boredom that feels physically unbearable.','Find healthy ways to feed your dopamine needs without burning out.'],
+  ['Self-trust','--lilac',126,'So many plans dropped that you stop believing your own. Why bother setting the goal?','Rebuild trust one small, kept promise at a time, at your pace.']
+];
+var bubs = $('#bubbles'), panel = $('#panel'), bubBtns = [], cur = -1;
+var narrow = window.innerWidth <= 860;
+var phone = window.matchMedia ? matchMedia('(max-width:860px)') : {matches:narrow};
+var sheet = $('#sheet'), sbg = $('#sheetBg'), sIn = $('#sheetIn'), sH = $('#sheetH'), sTimer = 0;
+/* grow a bubble until its label sits comfortably inside the circle */
+function fitBub(b){
+  var sp = b.firstChild, full = sp.textContent, s = parseFloat(b.style.getPropertyValue('--s')), w = 0;
+  sp.style.maxWidth = '';
+  full.split(' ').forEach(function(t){ sp.textContent = t; w = Math.max(w, sp.offsetWidth); });
+  sp.textContent = full;
+  s = Math.max(s, Math.ceil(w/.78 + 8));
+  sp.style.maxWidth = Math.round(s*.78) + 'px';
+  if (sp.offsetHeight > s*.62) s = Math.ceil(sp.offsetHeight/.62);
+  b.style.setProperty('--s', s + 'px');
+}
+function openSheet(d){
+  clearTimeout(sTimer);
+  sheet.style.setProperty('--c', 'var(' + d[1] + ')');
+  sH.textContent = d[0]; $('#sheetFeel').textContent = d[3]; $('#sheetTry').textContent = d[4];
+  if (sheet.hidden){
+    sheet.hidden = false; sbg.hidden = false; void sheet.offsetWidth;
+    sheet.classList.add('open'); sbg.classList.add('open');
+    sH.focus({preventScroll:true});
+  } else { sIn.classList.remove('pop-in'); void sIn.offsetWidth; sIn.classList.add('pop-in'); }
+}
+function closeSheet(){
+  if (sheet.hidden) return;
+  sheet.classList.remove('open'); sbg.classList.remove('open');
+  sTimer = setTimeout(function(){ sheet.hidden = true; sbg.hidden = true; }, RM ? 0 : 350);
+  if (bubBtns[cur]) bubBtns[cur].focus({preventScroll:true});
+}
+function pick(i, fx){
+  var d = BUB[i], b = bubBtns[i];
+  cur = i;
+  $$('.bub.sel', bubs).forEach(function(x){ x.classList.remove('sel'); });
+  b.classList.add('sel', 'seen');
+  b.classList.remove('popping'); void b.offsetWidth; b.classList.add('popping');
+  if (fx){ var r = b.getBoundingClientRect(); burst(r.left + r.width/2, r.top + r.height/2, 18); }
+  panel.innerHTML = '<h3 class="pop-in"></h3><div class="pop-in"><h4>How it can feel</h4><p></p></div><div class="pop-in"><h4>In coaching we might</h4><p></p></div>';
+  $('h3', panel).textContent = d[0];
+  var ps = $$('p', panel); ps[0].textContent = d[3]; ps[1].textContent = d[4];
+  if (phone.matches) openSheet(d);
+}
+BUB.forEach(function(d, i){
+  var b = document.createElement('button');
+  b.type = 'button'; b.className = 'bub';
+  b.style.setProperty('--c', 'var(' + d[1] + ')');
+  b.style.setProperty('--s', Math.round(d[2]*(narrow ? .86 : 1)) + 'px');
+  b.style.setProperty('--d', (-i*.8) + 's');
+  var t = document.createElement('span'); t.textContent = d[0]; b.appendChild(t);
+  b.setAttribute('aria-controls', 'panel');
+  b.addEventListener('click', function(){ pick(i, true); });
+  bubs.appendChild(b); bubBtns.push(b);
+  fitBub(b);
+});
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ bubBtns.forEach(fitBub); });
+$('#sheetClose').addEventListener('click', closeSheet);
+sbg.addEventListener('click', closeSheet);
+$('#sheetNext').addEventListener('click', function(){ pick((cur + 1) % BUB.length, false); });
+document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeSheet(); });
+
+/* butterfly that flies along the coaching path as you scroll */
+var jr = $('#journey'), jp = $('#jpath'), bf = $('#bfly');
+var jSteps = $$('.step', jr), jBadges = jSteps.map(function(s){ return $('.badge', s); });
+var vl = $('.vline', jr), vf = $('.vfill', jr);
+var jTick = false;
+function light(n){ jSteps.forEach(function(s, i){ s.classList.toggle('lit', i < n); }); }
+function badgeAt(b, r){ var q = b.getBoundingClientRect(); return {x:q.left + q.width/2 - r.left, y:q.top + q.height/2 - r.top}; }
+function placeBfly(){
+  jTick = false;
+  var r = jr.getBoundingClientRect(), vh = window.innerHeight;
+  if (window.innerWidth <= 860){
+    /* phones: the path runs down the left of the stacked steps */
+    var c = jBadges.map(function(b){ return badgeAt(b, r); });
+    var y0 = c[0].y, y1 = c[c.length-1].y, bx = c[0].x;
+    var by = RM ? y1 : Math.max(y0, Math.min(y1, vh*.6 - r.top));
+    vl.style.left = vf.style.left = (bx - 1.5) + 'px';
+    vl.style.top = vf.style.top = y0 + 'px';
+    vl.style.height = (y1 - y0) + 'px'; vf.style.height = (by - y0) + 'px';
+    bf.style.left = bx + 'px'; bf.style.top = by + 'px'; bf.style.rotate = '180deg';
+    light(c.filter(function(p){ return p.y <= by + 4; }).length);
+    return;
+  }
+  var p = RM ? .5 : (vh*.88 - r.top) / (r.height + vh*.35);
+  p = Math.max(0, Math.min(1, p));
+  var len = jp.getTotalLength(), pt = jp.getPointAtLength(len*p), pt2 = jp.getPointAtLength(Math.min(len, len*p + 4));
+  var svg = jp.ownerSVGElement, sw = svg.clientWidth, sh = svg.clientHeight;
+  var x = pt.x/1000*sw, y = 34 + pt.y/60*sh;
+  var ang = Math.atan2((pt2.y-pt.y)/60*sh, (pt2.x-pt.x)/1000*sw) * 180/Math.PI;
+  bf.style.left = x + 'px'; bf.style.top = y + 'px'; bf.style.rotate = (ang + 90) + 'deg';
+  light(RM ? jBadges.length : jBadges.filter(function(b){ return badgeAt(b, r).x <= x + 6; }).length);
+}
+function schedBfly(){ if (!jTick){ jTick = true; requestAnimationFrame(placeBfly); } }
+window.addEventListener('scroll', schedBfly, {passive:true});
+window.addEventListener('resize', schedBfly);
+placeBfly();
+
+/* coaching or therapy */
+var vsC = $('#vsC'), vsT = $('#vsT'), vsb = $('#vsbox p');
+function vs(c){
+  vsC.setAttribute('aria-pressed', c ? 'true' : 'false'); vsT.setAttribute('aria-pressed', c ? 'false' : 'true');
+  vsb.innerHTML = c
+    ? 'Coaching is practical. We look at where you are now, where you would like to be and how you can get there, one step at a time. <u class="bound">I stay within coaching boundaries</u>.'
+    : 'Therapy can help you understand and heal from what has happened. That is a different kind of support from coaching, and I will always be clear about where the line sits.';
+}
+vsC.addEventListener('click', function(){ vs(true); });
+vsT.addEventListener('click', function(){ vs(false); });
+
+/* focus timer with a growing plant */
+var clock = $('#clock'), tgo = $('#tgo'), trs = $('#trs'), tmsg = $('#tmsg');
+var stems = [$('#stem'), $('#stemIn')], l1 = $('#leaf1'), l2 = $('#leaf2'), bl = $('#bloom');
+var total = 120, left = 120, endAt = 0, iv = null, said = 0;
+var tmin = $('#tmin'), tsec = $('#tsec'), baseTitle = document.title;
+var SLEN = 112;
+function pad(n){ return (n < 10 ? '0' : '') + n; }
+function clamp(v){ return Math.max(0, Math.min(1, v)); }
+function ease(v){ return 1 - Math.pow(1 - v, 3); }
+function grow(p){
+  var s = .1 + .9*clamp(p/.55);
+  stems.forEach(function(el){ el.style.strokeDasharray = SLEN; el.style.strokeDashoffset = SLEN*(1-s); });
+  l1.style.transform = 'scale(' + ease(clamp((p-.25)/.2)) + ')';
+  l2.style.transform = 'scale(' + ease(clamp((p-.5)/.2)) + ')';
+  bl.style.transform = 'scale(' + ease(clamp((p-.78)/.22)) + ')';
+}
+function show(){
+  clock.textContent = pad(Math.floor(left/60)) + ':' + pad(left%60);
+  grow(1 - left/total);
+  document.title = iv ? clock.textContent + ' \u00b7 body doubling' : baseTitle;
+}
+function stop(){ clearInterval(iv); iv = null; tgo.textContent = left === total ? 'Start' : 'Resume'; }
+function tick(){
+  left = Math.max(0, Math.round((endAt - Date.now())/1000));
+  show();
+  var p = 1 - left/total;
+  if (p > .02 && said < 1){ said = 1; tmsg.textContent = 'You started. That was the hard bit.'; }
+  if (p >= .5 && said < 2){ said = 2; tmsg.textContent = 'Halfway. Look at you go.'; }
+  if (p >= .8 && said < 3){ said = 3; tmsg.textContent = 'Nearly there. Keep going gently.'; }
+  if (left <= 0){
+    stop(); tgo.textContent = 'Start'; said = 4;
+    tmsg.textContent = 'Done. The plant is in bloom. Go and have a drink of water.';
+    document.title = 'Done! \u00b7 ' + baseTitle;
+    var r = $('.tcard').getBoundingClientRect(); burst(r.left + r.width/2, r.top + 90, 26);
+    left = total;
+  }
+}
+tgo.addEventListener('click', function(){
+  if (iv){ stop(); show(); tmsg.textContent = 'Paused. No guilt.'; return; }
+  if (left === total){ said = 0; tmsg.textContent = 'One small thing. That is all.'; }
+  endAt = Date.now() + left*1000; tgo.textContent = 'Pause';
+  iv = setInterval(tick, 500); show();
+});
+trs.addEventListener('click', function(){ stop(); left = total; said = 0; tmsg.textContent = 'One small thing. That is all.'; show(); });
+/* set a new length: presets fill the min/sec boxes, typing in the boxes clears the presets */
+function setLen(sec){
+  stop(); total = left = Math.max(5, Math.min(3600, sec)); said = 0;
+  tgo.textContent = 'Start'; tmsg.textContent = 'One small thing. That is all.'; show();
+}
+$$('.tlen .chip').forEach(function(c){
+  c.addEventListener('click', function(){
+    $$('.tlen .chip').forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+    c.setAttribute('aria-pressed','true');
+    var sec = parseInt(c.getAttribute('data-s'), 10);
+    tmin.value = Math.floor(sec/60); tsec.value = sec%60;
+    setLen(sec);
+  });
+});
+[tmin, tsec].forEach(function(inp){
+  inp.addEventListener('input', function(){
+    var sec = (parseInt(tmin.value, 10) || 0)*60 + (parseInt(tsec.value, 10) || 0);
+    if (sec <= 0) return;
+    $$('.tlen .chip').forEach(function(x){ x.setAttribute('aria-pressed', parseInt(x.getAttribute('data-s'), 10) === sec ? 'true' : 'false'); });
+    setLen(sec);
+  });
+});
+show();
+
+/* retreat day postcard */
+var ideas = $('#ideas'), pcList = $('#pcList'), pcEmpty = $('#pcEmpty'), pc = $('#postcard');
+function toggle(btn){ btn.setAttribute('aria-pressed', btn.getAttribute('aria-pressed') === 'true' ? 'false' : 'true'); }
+$$('.chip', ideas).forEach(function(c){
+  c.addEventListener('click', function(){
+    toggle(c);
+    var on = $$('.chip[aria-pressed="true"]', ideas).map(function(x){ return x.textContent; });
+    pcList.innerHTML = '';
+    on.forEach(function(t){ var li = document.createElement('li'); li.textContent = t; pcList.appendChild(li); });
+    pcEmpty.hidden = on.length > 0;
+    pc.classList.remove('bump'); void pc.offsetWidth; pc.classList.add('bump');
+    if (c.getAttribute('aria-pressed') === 'true'){ var r = c.getBoundingClientRect(); burst(r.left + r.width/2, r.top, 8); }
+  });
+});
+
+/* message builder (nothing is sent from the page) */
+var topics = $('#topics'), nm = $('#nm'), more = $('#more'), dr = $('#draft'), mail = $('#mail'), copied = $('#copied');
+var EMAIL = 'nat@tillyadhdstudio.co.uk', msg = '';
+function joinList(a){ return a.length < 2 ? a.join('') : a.slice(0,-1).join(', ') + ' and ' + a[a.length-1]; }
+function build(){
+  var t = $$('.chip[aria-pressed="true"]', topics).map(function(x){ return x.textContent.toLowerCase(); });
+  msg = 'Hi Natalie,\n\nI found your website and I would love a free 30-minute chat about ADHD coaching.';
+  if (t.length) msg += '\n\nWhat is on my mind: ' + joinList(t) + '.';
+  if (more.value.trim()) msg += '\n\n' + more.value.trim();
+  msg += '\n\nThanks,\n' + (nm.value.trim() || '[your name]');
+  dr.textContent = msg;
+  mail.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent('Free chat enquiry') + '&body=' + encodeURIComponent(msg);
+}
+$$('.chip', topics).forEach(function(c){ c.addEventListener('click', function(){ toggle(c); build(); }); });
+nm.addEventListener('input', build); more.addEventListener('input', build);
+$('#f').addEventListener('submit', function(e){ e.preventDefault(); });
+$('#copy').addEventListener('click', function(){
+  function fallback(){
+    var r = document.createRange(); r.selectNodeContents(dr);
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    copied.textContent = 'Message selected. Copy it with your keyboard, then paste it into an email to ' + EMAIL + '.';
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(msg).then(function(){
+      copied.textContent = 'Copied. Paste it into an email to ' + EMAIL + '.';
+      var r = $('#copy').getBoundingClientRect(); burst(r.left + r.width/2, r.top, 12);
+    }, fallback);
+  } else fallback();
+});
+build();
+})();
+</script>
+
+
+</body></html>
